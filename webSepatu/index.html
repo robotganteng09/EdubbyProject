@@ -44,7 +44,7 @@
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link" id="cart" data-bs-toggle="modal" data-bs-target="#exempleModal" >
+                    <a href="#" class="nav-link" id="cart" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                    <img src="cart.svg" alt="" class="cart-style">
                    <span id="cart-count">0</span>
                     </a>
@@ -94,76 +94,95 @@
         </button>
       </div>
      
-      <div class="container">
+      <div class="container" >
+        
+        <div class="modal" id="exampleModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">keranjang anda</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul id="cart-items" class="list-group"></ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row justify-content-center" style="margin-top: 50px;">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card">
-              <div class="card"  data-name="sepatu1">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card "data-name="sepatu1">
+              <div class="card">
                 <img src="sepatu1.jpg" class="card-img-top" alt="Luis Vuitton Bag" style="width: 100%; height: 200px; object-fit: cover; object-position: bottom;">
                 <div class="card-body">
                   <h5 class="card-title">Luis Vuitton Bag</h5>
                   <p class="card-text">Luis Vuitton <br>$5</p>
-                  <a href="luis.html" class="btn btn-primary add-cart">Beli</a>
+                  <a href="luis.html" class="btn btn-primary add-cart" data-name="sepatu1">Beli</a>
                 </div>
               </div>
             </div>
           
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card">
-              <div class="card" data-name="sepatu2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card"  data-name="sepatu2">
+              <div class="card">
                 <img src="sepatu2.jpg" class="card-img-top" alt="Samba Blue" style="width: 100%; height: 200px; object-fit: cover; object-position: bottom;">
                 <div class="card-body">
                   <h5 class="card-title">Samba Blue</h5>
                   <p class="card-text">Adidas <br>$49,9</p>
-                  <a  class="btn btn-primary add-cart">Beli</a>
+                  <a  class="btn btn-primary add-cart" data-name="sepatu2">Beli</a>
                 </div>
               </div>
             </div>
           
           
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card">
-              <div class="card"  data-name="sepatu3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-name="sepatu3">
+              <div class="card"  >
                 <img src="sepatu3.jpg" class="card-img-top" alt="Carhart Wip Jacket Active" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; object-position: center;">
                 <div class="card-body">
                   <h5 class="card-title">Carhart Wip Jacket Active</h5>
                   <p class="card-text">Carhart <br>$15,2</p>
-                  <a  class="btn btn-primary add-cart">Beli</a>
+                  <a  class="btn btn-primary add-cart" data-name="sepatu3">Beli</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card">
-              <div class="card"  data-name="baju1">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-name="baju1">
+              <div class="card"  >
                 <img src="baju1.jpg" class="card-img-top" alt="Carhart Wip Jacket Active" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; object-position: center;">
                 <div class="card-body">
                   <h5 class="card-title">Carhart Wip Jacket Active</h5>
                   <p class="card-text">Carhart <br>$15,2</p>
-                  <a  class="btn btn-primary add-cart">Beli</a>
+                  <a  class="btn btn-primary add-cart" data-name="baju1">Beli</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card">
-              <div class="card"  data-name="baju2">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card" data-name="baju2">
+              <div class="card"  >
                 <img src="baju2.jpg" class="card-img-top" alt="Carhart Wip Jacket Active" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; object-position: center;">
                 <div class="card-body">
                   <h5 class="card-title">Carhart Wip Jacket Active</h5>
                   <p class="card-text">Carhart <br>$15,2</p>
-                  <a  class="btn btn-primary add-cart">Beli</a>
+                  <a  class="btn btn-primary add-cart" data-name="baju2">Beli</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card">
-              <div class="card"  data-name="baju3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 product-card"   data-name="baju3">
+              <div class="card">
                 <img src="baju2.jpg" class="card-img-top" alt="Carhart Wip Jacket Active" style="width: 100%; height: auto; max-height: 200px; object-fit: contain; object-position: center;">
                 <div class="card-body">
                   <h5 class="card-title">Carhart Wip Jacket Active</h5>
                   <p class="card-text">Carhart <br>$15,2</p>
-                  <a  class="btn btn-primary add-cart">Beli</a>
+                  <a  class="btn btn-primary add-cart" data-name="baju3">Beli</a>
                 </div>
               </div>
             </div>
 
-
+         
       </div>
       <script src="script.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
